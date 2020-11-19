@@ -1,2 +1,12 @@
-echo "Good day to you."
+echo "Good day. I hope you are well!"
+echo "Do you want to Add? Please enter capital letter A"
+echo "or do you want to Subtract? Please enter capital S"
+echo "if neither, then enter E to Exit."
+read A
+echo "Ok, let's Add!"
+read S
+echo "Subtraction (not my favorite) but Ok"
+read E
+echo "Sorry to see you go!"
+
 
