@@ -2,13 +2,18 @@ echo "Good day. I hope you are well!"
 echo "Do you want to Add? Then enter the letter A"
 echo "or do you want to Subtract? Enter S"
 echo "if neither, then enter E to Exit."
-if [[A]]; then
+echo "Please provide an answer to continue:"
+
+read response
+case $response in
+"A")
 echo "Ok, we will Add!"
-fi
-if [[S]]; then
+;;
+"S")
 echo "Subtraction (not my favorite) but Ok"
-fi
-if [[E]]; then
-echo "Sorry to see you go, Goodbye!"
-fi 
+;;
+"E")
+echo "Sorry to see you go, Goodbye."
+;;
+esac
 
