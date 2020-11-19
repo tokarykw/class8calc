@@ -2,13 +2,13 @@ echo "Good day. I hope you are well!"
 echo "Do you want to Add? Then enter the letter A"
 echo "or do you want to Subtract? Enter S"
 echo "if neither, then enter E to Exit."
-if [[A]]; do
-echo "Ok, let's Add!"
+if [[A]]; then
+echo "Ok, we will Add!"
 fi
-if [[S]]; do
+if [[S]]; then
 echo "Subtraction (not my favorite) but Ok"
 fi
-if [[E]]; do
+if [[E]]; then
 echo "Sorry to see you go, Goodbye!"
 fi 
 
