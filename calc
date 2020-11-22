@@ -11,7 +11,7 @@ echo "Ok, we will Add. Please enter the first number."
 read add1
 echo "Please enter another number to add:"
 read add2
-echo "add1 + add2 = "
+echo "$add1 + $add2 = "
 let "total=add1 + add2"
 echo $total
 ;;
@@ -27,6 +27,10 @@ echo $total
 "E")
 echo "Sorry to see you go, Goodbye."
 ;;
+*)
+echo "I am not smart enought to do that. Please start over."
 esac
+
+
  
 
