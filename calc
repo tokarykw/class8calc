@@ -1,8 +1,9 @@
 echo "Good day. I hope you are well!"
-echo "Do you want to Add? Then enter the letter A"
-echo "or do you want to Subtract? Enter S"
-echo "if neither, then enter E to Exit."
-echo "Please provide an answer to continue:"
+echo "Do you want to: 
+1. Add? Then enter the letter A
+2. Subtract? Enter S
+3. Enter E to Exit.
+Please provide an answer to continue:"
 
 read response
 case $response in
@@ -14,7 +15,7 @@ read add2
 echo "$add1 + $add2 = "
 let "total=add1 + add2"
 echo $total
-;;
+;; 
 "S")
 echo "Subtraction (not my favorite) but Ok. Please enter the first number for your subtraction equation:"
 read num1
@@ -28,9 +29,18 @@ echo $total
 echo "Sorry to see you go, Goodbye."
 ;;
 *)
-echo "I am not smart enought to do that. Please start over."
+echo "I am not smart enough to understand that command. Please start over."
 esac
 
-
- 
-
+echo Do you want to start again? Yes-Y or No-N?:
+read answer
+case $answer in
+"Y")
+echo Start over.
+;;
+"N")
+echo Goodbye.
+;;
+*)
+echo "Please enter Y or N..."
+esac
