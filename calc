@@ -1,3 +1,4 @@
+while true; do
 echo "Good day. I hope you are well!"
 echo "Do you want to: 
 1. Add? Then enter the letter A
@@ -29,18 +30,19 @@ echo $total
 echo "Sorry to see you go, Goodbye."
 ;;
 *)
-echo "I am not smart enough to understand that command. Please start over."
+echo "I am not smart enough to understand that command.
+"
 esac
 
 echo Do you want to start again? Yes-Y or No-N?:
 read answer
 case $answer in
 "Y")
-echo Start over.
+echo Start over
 ;;
 "N")
-echo Goodbye.
-;;
-*)
-echo "Please enter Y or N..."
+echo Goodbye
+exit
 esac
+
+done
