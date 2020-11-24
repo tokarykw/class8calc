@@ -27,7 +27,7 @@ let "total=num1 - num2"
 echo $total 
 ;;
 "E")
-echo "Sorry to see you go, Goodbye."
+echo "Sorry to see you go."
 ;;
 *)
 echo "I am not smart enough to understand that command.
